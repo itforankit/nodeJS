@@ -1,0 +1,5 @@
+//var os = require('os')
+//var fs =require('fs')
+//console.log(os.cpus())
+console.log("Hello")
+//var data = fs.readFileSync("Notes.js")

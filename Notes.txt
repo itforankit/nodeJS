@@ -1,0 +1,106 @@
+12th June 2021
+****************
+What is nodeJS?
+Front End + Back End (Coding/API + DB)
+Must in Front End: html CSS and JavaScript
+Backend: Java/Python/.net/php/Groovy or any other?
+
+in 2009 Ryna Dhall invented nodeJS
+NodeJS a runtime env to execute javascript files
+
+if before 2009 u had a file demo.js, it can execute only inside browser.html but after 2009 it can run at server side using node.Js
+because now we can execute js files in system we can talk to other applications as well like file or datbase or any other software
+
+it's build using v8 chrome technology which internally use c/C++
+
+want to develop desktop app using node js need framework Electron
+
+what is REPL?
+Read Evalutae Print Loop
+where we can directly execute javascript
+
+//All about nodeJS
+
+Modules
+
+Any file can be called as module in node Js, this file contain any functionalities
+combining modules create packages
+
+to use node packages or java script packages we use npm - node package manager (creation, updatiion, removal, installation)
+npmjs.com is central repository wjhere all people over the world put their packages and other developer install the packages from there
+
+install modeule using npm
+npm install modeule-name/package-name  - in the same folder
+npm install -g modeule-name -g stand for Gloabal  - available to any location, will be installed at global location of your machine
+
+npm init will create a file in your folder name as package.json, this file gives all ifnormation like dependencies and scripts and etc for your 
+
+npm start will go to package,.json and search for the start script and execute what is written there
+
+why the dash we use NodeJS?
+NodeJS is used mainly because of it's single threaded server by default
+nodejs is using one of the very common language of web development whihc is js so it's very easty to swiitch
+it is fast becasue of non blocking or async execution
+no blocking means if some task is taking some time, js will not wait for that task to be completed it will go to next task
+
+async functions as re we don't know the result, hwo much time it will take
+
+we can convert user defined fucntions in to Async functions by some keywords that will come at later
+
+node js will cimply put some code/fucntion aside in to event loop and resume the execution
+when those function will be completed, they will come back using the mechanism known as callback
+
+Modules
+---------
+
+any js file is a module.
+we can send something from one module to another module, syntax known as 
+
+export.something (example third.js and demo1.js)
+
+to send something to another module we have a keyword known as 
+
+exports.
+
+every module by default send an object to outside world, when any module requires that another modules
+
+//we get an object which contains key values
+//if we need separately not as an object, this was no tpossible earlier now it's possible, how?
+//using keywprd export
+prefixing export keyword before var will allow that variable to be used outside js file
+this is started from later javascripts which is ES6
+ES stands for ECMAScript, is the specification of rules that states how to use javascripts
+
+ES5 no export keyword
+ES6 export keyword added
+
+currently nodeJS support ES5 and ES6 only partial hence few KW not understood by nodeJS
+
+https://babeljs.io/ will give you teh equivalent code of ES6 to ES5
+
+
+File demo1.js
+export vatr ip="123.4.3.12"
+export var Port="1111"
+
+File demo2.js
+import {Ip, Port} from "demo1.js"
+
+Core Modules -- using which node js is build (OS, )
+NPM Modules  -- need to install form npm
+User defined Modules -- files we have created
+
+
+npm install -g nodemon
+
+nodemon file1.js  // no need to run the program again and again it will run automatically as soon as we will save the program
+
+
+
+
+
+
+
+
+
+
