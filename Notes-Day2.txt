@@ -1,0 +1,108 @@
+Agenda
+------
+1. File system
+2. Express in nodeJs
+3. Nginx
+4. PM2 package
+
+
+File system
+--------------
+Creration File, updating file, reading, deleting etc
+whenever we need to anything with file we called it as file system
+for accessing file system of your machine we have a core module asa fs (fs stand for file system)
+
+all these methinds are asynchronus, they are expecting a function to be called as callback
+fs.fileExists(,function(error,result))
+fs.fileExists(,function(result))
+
+after node js version 8 wwe have addition method everyword we have FileExistsSync()
+all the methods
+//non blocking and blocking
+//.fucntionname()
+//Blocking Syntax -- .functionNameSync()
+//all these functions are unpredictable 
+function(error,result)
+
+function documentation
+
+fs.fileExists() take cursor and it will give the defination how to usse it
+
+
+absolute path (c://learning/nodejs/text1.text) or relative path (./ or .//)
+
+in javascript there is no function overloading, js even doesnot bother about data types
+//*********************************************************************************************************
+
+command line argument
+-----------------------
+console.log(process.argv)
+
+Express
+-------
+
+//a web server is something which is cap[able of listeninng httprequest and serve html pages
+//a webserver can internally host or execute programs in any language java, python, c, c++ etc
+// to create a server/web server/ http server we are using framework of nodeJS known as Express
+
+npm install Express
+
+//we have created ahttp serve using Express
+var express=require('express')
+var server = express()
+
+//http us a built in module
+//why we use express not http?
+//express also uses http internally to make it easy for developers
+
+//some task which can be done in express in 2 lines and may it require 20+ line in http
+//middleware function
+//express is used to for easy routing and midllewares
+
+//why ? we already gavce servers apache, nginx iis etc. why do we need this?
+//apache, nginx and iis can'do any programming, can be used as only used for hosting 
+//if we want to read users from the db and return those users, NgiNX can't do that
+//they need soem program written in any other programming language
+
+//routing
+where and how do you want to reach somewhere?
+where -> path 
+how -> method
+path and method in combination create a route
+//finally technically a route is nothing but path + method
+path-> a layman string "/login" and "/register/login"
+method -> provide by http standards like get, post, put, patch, delete, options etc
+get and post will be covered
+//Route examples ("/movies" + post) or ("/movies"+get)
+lets convert above example in JS/ express syntax
+
+server.method('/pathname')
+
+take request do somethign and send respornse
+
+if we have to focus on we are building something that we can say that if we need some date then will reach out to this address and will give you the data
+
+in get method Body is not allowed
+in post method we can send body as well
+
+converting http body syntaxes in to opur programming is known as body parsing
+
+
+json
+-----
+is used to communicate between client and server these days
+is lightest
+is easily readable
+now days data uis one but source are different
+mobile, browser, smart tvs, 
+Json is Java script object notation which content key column value pair separeated by , 
+value can be string number, json, array,
+
+
+
+
+
+
+
+
+

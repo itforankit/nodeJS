@@ -10,7 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "Express": "^3.0.1",
+    "express": "^4.17.1",
     "map-obj": "^4.2.1",
+    "mongoose": "^5.12.14",
+    "mongose": "0.0.2-security",
+    "nodemailer": "^6.6.2",
+    "request": "^2.88.2",
     "ytdl-core": "^4.8.2"
   }
 }

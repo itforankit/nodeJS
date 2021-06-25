@@ -1,0 +1,14 @@
+{
+  "name": "ankitpractise",
+  "version": "1.0.0",
+  "description": "ankit node js practise project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ankit",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.1"
+  }
+}

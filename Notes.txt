@@ -23,6 +23,8 @@ where we can directly execute javascript
 
 Modules
 
+https://www.npmjs.com/package/node-dht-sensor
+
 Any file can be called as module in node Js, this file contain any functionalities
 combining modules create packages
 

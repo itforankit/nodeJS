@@ -1,0 +1,20 @@
+{
+  "name": "nodeedurekajune",
+  "version": "1.0.0",
+  "description": "this is our first npm package ",
+  "main": "demo.js",
+  "scripts": {
+    "start": "node demo.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ashu lekhi",
+  "license": "ISC",
+  "dependencies": {
+    "s3": "^4.4.0",
+    "ytdl-core": "^4.8.2"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "postgress"
+  ]
+}

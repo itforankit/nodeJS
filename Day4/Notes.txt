@@ -1,0 +1,42 @@
+#promises work only with Asynchronus
+
+//mongodb is non relational database and no sql database means no such query language we have functions to perform opreations like for creating we have method like insert or save find or findone
+.update(), .delete 
+// non relation means no pk foreign key or no relation in database
+collections by default
+in database we have collections in collections we have data stores is in form of object/json that is {} these records are called as documents
+
+users --users collections will store documents of users
+{email:"itforankti@gmail.com"}
+
+CRUD
+Create Retrieve update and delete
+
+MongoDB is a  no schema database if we want to apply a schema in mongo db then we will use package known as mongoose otherwise
+use package known as mongodb
+
+what is mongodb vs mongoose?
+
+javascript fucntion Date.now() will prvide the unique time which can also be used as unique id
+data.userId = DAte.now()
+
+
+Assignment:
+-===========
+my-cake-house.herokuapp.com
+http://localhost/api/allcakes
+
+1) API will have to retrieve all the data stored in database
+Cake folder -> 4 files -> Index.js, model.js, controoller.js and service.js
+2) Add cake API -> accept the cake data from postman and store in db
+3) ask the cake id from cliet and retrieve the cake details from database
+
+//in index.js file
+router.get('/getuser/:userid')
+
+// in controller file
+req.params.userid 
+
+
+
+

@@ -1,0 +1,217 @@
+What is nodejs ?
+
+// What is a web application 
+
+Instagram
+Netflix
+Amazon
+Linkedin
+
+Frontend + Backend(Coding/Api + Database)
+Must in Frontend  - html css and Javascript
+
+can i say javascript is mandatory part?
+JS(Must) + Java/Python/.net/php/Groovy or any other ?
+
+in 2009 Ryna Dhall invented NOdejs 
+
+Nodejs a runtime env to execute javascript files at system level
+
+If before 2009 u had a file demo.js 
+demo.js was executing only inside browsers/html files
+
+we can run node demo.js
+
+Because now we can execute js files in syatme we can talk to other applications as well like files or databases or any other software 
+
+What? How it is built ?
+It is build using the v8 chrome engine technology 
+
+which internally uses C/C++
+
+Electron ---
+
+nodejs execution is node filename.js
+
+What is REPL
+Read Evaluate print loop 
+
+// All Basic about Node js 
+
+what is Repl is where we can directly execute javascript
+
+for example to write js code we need a file 
+create a file demo.js then we create a varibale and then we use it
+
+if we have to check something we can directly run it in cmd 
+by typing node first
+
+// MODULES 
+Any file can be called as module in nodejs 
+// if ashu is good in creating chat functionaloties 
+// i am going to create some functions and expose it to the world 
+// it will be known as module
+
+combining modules cn create packages 
+// for example if u have to create a server , u need to send email , to send some to send nitiification , to upload some video , to talk to some database 
+
+For all the above functionaloties we need packages 
+node packages 
+and to use nodepackages or javascript pakages we use npm
+
+NPM - NODE PACKAGE MANAGER the one who is resposible for managing 
+pacakges 
+Creation , updation , removal and installation
+npmjs.com is central repositiory where all people over the world put their 
+packages and other developers install it from there and use it 
+
+// to install a module from npm 
+npm install package_name/module_name
+npm install -g module_name  , -g stands for global
+
+Local module means in the same folder 
+global means available to any location it will be install global location of your pacakgesnot the local place 
+
+to create a node package we execute a command npm init 
+npm init will create a file in your folder named as package.json
+
+package.json is file which gives all information like dependecies and scripts and etc for your package
+
+npm start will go to package.json and seach for start script and execute what is written there 
+Why the Dash we use NOdejs ?
+Nodejs is using one of the very common lanagause of web devlelpment which is js so it is very to switch
+NOdejs is used mainly because of its single threaded server by default
+
+it is fast because of non blocking or async execution
+non blocking means if some task is taking some time js will not wait for that task to be completed it will go to next task 
+searchUsers()
+searchFlights()  // it may take some fraction of seconds 
+nodejs will not wait for these functions to be executed it will to next line 
+
+
+nodejs works like if i am dependent on ashwini i will pass my contact information to ashwinin and once ashwiini is done with that task he will contact me either through some messaging /call or some email
+
+async functions are we dont know thw result 
+
+we dont know 
+postgress has nothing to do with us it is just some database 
+no relation with nodejs 
+whenever we decide to store our data in the database we decide to pick one snd someone picked 
+postgress
+
+nodejs 2009  version 1
+node 8 version allowed use to make userdefines also as asyc
+
+We can convert user defined funtion into async function by some keywords that will come eventually in next sessions
+
+node js will simply put some functions aside into eventloop and resume the execution
+when those functions will be compoleted they will come back using a mechaism known as callback
+
+find somthing fromdb // call a function
+upload // call  a function
+send sms // call a function
+// send email // call a function
+
+for every task what do we need to do call 
+function calls()
+som package or inbuilt 
+
+>>>>>>>>>>>>> MODULES/PACKAGES
+modules  
+what is a module?
+any js file is a module
+
+
+we can send something from one modules to another module
+
+one and two from one module we need something in another module
+to send something to another modules we have a keyword known as exports(.)
+
+
+every module by default sends an object to outside world
+when any module requires that another modules it gets an object in return 
+
+// an in that object data is stored in key value pairs 
+everything is coming into an object what if i need seperately
+summary of requiring modules 
+// we get an object which contains data 
+
+if we need ip and port not in an object 
+// this was not possible earlier now it is possible 
+How ?
+
+export var Port  = 8080
+
+export var IP = "127/.0.0.1
+
+var phone = 48923439243
+
+what is this var 
+var is a keyword of javascript to decalre a variable
+
+prefixing export keyword will allow that variable to be used by otside js files 
+
+this is started from later javascripts which is Es6 
+ES stands for ECMASCRIPT 
+
+What is this ECMA SRCIPT ?
+ECMASRCIpt is the specification of rules that states how to use javascript 
+
+for example if anyone is very new to javasctip what u will twll to them
+// to declare a variable in js we have a keyword var 
+line 161 specification of var keyword or rules when kept at standard is known as ECMASCRIPT
+
+ES 5 there is not export keyword
+ES6 export
+
+Currents NOdejs supports ES5 and ES6(only partial) so few keywords are not understood by nodejs right now 
+
+export is new feature of es6 which allows you to send one thing seperately 
+
+export var port  = 8080
+
+we cant use it right now because node doesn't support without converting it inot es5 
+
+
+FILE demo1.js
+export var Ip = 8080
+export var PORT = "Some port"
+
+
+FIle demo2.js
+import {Ip, PORT} from "demo1.js"
+
+
+// CORE MODULES -- using which node js is built (like fs  , os , path , cluster , http, etc etc)
+// NPM MODULES - install from npmjs.com / external modules 
+// USER DEFINED modules --- these files which we have created like demo1 and demo2
+
+// local global
+if u wish to install any package globally 
+
+npm install -g package_name/module_name
+
+local installation npm install package_name/module_name
+
+// GIT  - version control system 
+if some code is not working i can go back to previous world code
+
+initialised our folder as empty git repositiory 
+// we will add remote location and assign a name to it 
+ git remote add is command and origin is the name of that location
+git remote add origin 
+// status git status
+git add filename
+when ever u want to save 
+commits are like checkpoints
+git commit -m "your commit message"
+
+putting ur code to github
+git push remote_name branch_name 
+git push origin master
+
+to add all the files in one go git add .
+
+but we dont want to put some files to git lets same some seret files or node_modules
+
+then need to ignore and we need .gitignore
